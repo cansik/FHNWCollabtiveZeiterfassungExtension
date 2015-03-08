@@ -2,6 +2,9 @@
   "name": "FHNW Collabtive Zeiterfassung Extension",
   "description": "Macht die Zeiterfassung im Collabtive einfacher.",
   "version": "0.2",
+  "icons": {
+    "256": "logo-256.png"
+  },
   "manifest_version": 2,
   "content_scripts": [
     {
