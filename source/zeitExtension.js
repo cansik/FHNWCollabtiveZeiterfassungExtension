@@ -19,6 +19,7 @@ actualCode += function updateEndDate() {
 };
 
 actualCode += AddUpdateListenerToCalendar;
+actualCode += AddUpdateListenerToCalendarControls;
 
 var script = document.createElement('script');
 script.textContent = actualCode;
@@ -51,14 +52,17 @@ function AddUpdateListenerToCalendar() {
 }
 
 // add calendar next / back button events
-var calButtons = document.querySelectorAll('.datepick .next, .datepick .back');
-for(btn in calButtons)
-{
-    if(calButtons[btn].setAttribute === undefined) continue;
+function AddUpdateListenerToCalendarControls() {
+    var calButtons = document.querySelectorAll('.datepick .next, .datepick .back');
+    for(btn in calButtons)
+    {
+        if(calButtons[btn].setAttribute === undefined) continue;
 
-    calButtons[btn].setAttribute('onclick', 'AddUpdateListenerToCalendar();');
+        calButtons[btn].setAttribute('onclick', 'AddUpdateListenerToCalendarControls();AddUpdateListenerToCalendar();');
+    }
 }
 
+AddUpdateListenerToCalendarControls();
 AddUpdateListenerToCalendar();
 
 /*
