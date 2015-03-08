@@ -13,8 +13,4 @@ Die Chrome Extension macht die Zeiterfassung mit dem Collabtive Tool der FHNW et
 - [x] Startdatum wird direkt als Enddatum übernommen
 
 #### Beispiel
-###### Ohne Extension
-![My image](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/img/vorher.png?raw=true)
-
-###### Mit Extension
-![My image](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/img/nachher.png?raw=true)
+![My image](https://raw.githubusercontent.com/cansik/FHNWCollabtiveZeiterfassungExtension/master/img/collabtive_fix_demo.gif)
