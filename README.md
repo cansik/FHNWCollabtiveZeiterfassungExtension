@@ -2,7 +2,7 @@
 Die Chrome Extension macht die Zeiterfassung mit dem Collabtive Tool der FHNW etwas einfacher.
 
 #### Letzte Version
-[Alpha 0.2 - 08.03.2015](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/bin/FHNWCollabtiveZeiterfassungExtension_v0.2.crx?raw=true) (Installation funtkioniert nur im Chrome Developer Mode)
+[Alpha 0.2 - 08.03.2015](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/bin/FHNWCollabtiveZeiterfassungExtension_v0.2.crx?raw=true) (Installation funktioniert nur im Chrome Developer Mode)
 
 #### Features
 ###### Version 0.3
