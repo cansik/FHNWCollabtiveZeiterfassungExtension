@@ -2,7 +2,7 @@
 Die Chrome Extension macht die Zeiterfassung mit dem Collabtive Tool der FHNW etwas einfacher.
 
 == Vorher
-![My image](username.github.com/FHNWCollabtiveZeiterfassungExtension/img/vorher.png)
+![My image](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/img/vorher.png?raw=true)
 
 == Nachher
-![My image](username.github.com/FHNWCollabtiveZeiterfassungExtension/img/nachher.png)
+![My image](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/img/nachher.png?raw=true)
