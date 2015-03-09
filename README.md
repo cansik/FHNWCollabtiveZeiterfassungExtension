@@ -6,8 +6,11 @@ Die Chrome Extension macht die Zeiterfassung mit dem Collabtive Tool der FHNW et
 - [Alpha 0.2 - 08.03.2015](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/bin/FHNWCollabtiveZeiterfassungExtension_v0.2.crx?raw=true)
 
 #### Features
+###### Version 0.4
+- [ ] Aufgabenlisten Suche Bug Fix (Elemente verschwinden) 
+
 ###### Version 0.3
-- [ ] Angabe der Zeit in Stunden
+- [x] Angabe der Zeit in Stunden
 
 ###### Version 0.2
 - [x] Aufgaben werden als Liste dargestellt und können durchsucht werden.
