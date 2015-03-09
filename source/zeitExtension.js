@@ -18,6 +18,14 @@ actualCode += function updateEndDate() {
     endDate.value = startDate.value;
 };
 
+actualCode += function setTimeSpan(zeitField) {
+    var startTime = document.getElementById('started');
+    var endTime = document.getElementById('ended');
+
+    startTime.value = '00:00';
+    endTime.value = zeitField.value;
+}
+
 actualCode += AddUpdateListenerToCalendar;
 actualCode += AddUpdateListenerToCalendarControls;
 
@@ -64,6 +72,15 @@ function AddUpdateListenerToCalendarControls() {
 
 AddUpdateListenerToCalendarControls();
 AddUpdateListenerToCalendar();
+
+// add time textfield
+var fieldSet = document.getElementById('started').parentElement.parentElement;
+var timeRow = '<div class="row"> <label for="zeit">Zeit:</label> <input type="text" class="text" style="width:80px;margin:0 6px 0 0;" id="zeit" name="zeit" onblur="setTimeSpan(this)" placeholder="hh:mm" regexp="^([01]?\d|2[0123]):[012345]\d$" realname="Zeit (: hh:mm)">';
+
+var elem = document.createElement('div');
+elem.innerHTML = timeRow;
+
+fieldSet.insertBefore(elem, fieldSet.children[2]);
 
 /*
 //Add Date by Button solution
