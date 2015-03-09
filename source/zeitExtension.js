@@ -9,6 +9,8 @@ var actualCode = function searchTTaskField(searchField) {
         else
             entry.style.display = "none";
     }
+
+    searchField.onblur();
 };
 
 actualCode += function updateEndDate() {
@@ -18,12 +20,14 @@ actualCode += function updateEndDate() {
     endDate.value = startDate.value;
 };
 
-actualCode += function setTimeSpan(zeitField) {
+actualCode += function setTimeSpanToFields(zeitField) {
     var startTime = document.getElementById('started');
     var endTime = document.getElementById('ended');
 
+    var time = zeitField.value;
+
     startTime.value = '00:00';
-    endTime.value = zeitField.value;
+    endTime.value = time;
 }
 
 actualCode += AddUpdateListenerToCalendar;
@@ -39,12 +43,12 @@ script.parentNode.removeChild(script);
 
 //Style ttask Select List
 var ttask = document.getElementById('ttask');
-ttask.setAttribute('size', '100');
+ttask.setAttribute('size', '200');
 
 //Add Searchbar
 var row = ttask.parentElement;
 var rowContent = row.innerHTML;
-row.innerHTML = '<input id="ttaskSearchField" type="text" placeholder="Suche" onkeyup="searchTTaskField(this)" />' + rowContent;
+row.innerHTML = '<input id="ttaskSearchField" type="text" placeholder="Suche" oninput="searchTTaskField(this)" />' + rowContent;
 
 
 //Add StartDate updater
@@ -75,15 +79,11 @@ AddUpdateListenerToCalendar();
 
 // add time textfield
 var fieldSet = document.getElementById('started').parentElement.parentElement;
-var timeRow = '<div class="row"> <label for="zeit">Zeit:</label> <input type="text" class="text" style="width:80px;margin:0 6px 0 0;" id="zeit" name="zeit" onblur="setTimeSpan(this)" placeholder="hh:mm" regexp="^([01]?\d|2[0123]):[012345]\d$" realname="Zeit (: hh:mm)">';
+var timeRow = '<div class="row"> <label for="zeit">Zeit:</label> <input type="text" class="text" style="width:80px;margin:0 6px 0 0;" id="zeit" name="zeit" onblur="setTimeSpanToFields(this)" placeholder="hh:mm" realname="Zeit (: hh:mm)">';
+
+//regexp="^([\d{2}]:)?(\d{2})$"
 
 var elem = document.createElement('div');
 elem.innerHTML = timeRow;
 
 fieldSet.insertBefore(elem, fieldSet.children[2]);
-
-/*
-//Add Date by Button solution
-var endDate = document.getElementById('ttendday');
-endDate.parentElement.innerHTML += '<button onclick="updateEndDate();return false;" onfocus="this.blur();" title="Startdatum übernehmen">Startddatum</button>';
-*/
