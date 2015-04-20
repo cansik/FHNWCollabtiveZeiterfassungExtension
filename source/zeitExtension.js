@@ -10,7 +10,9 @@ var actualCode = function searchTTaskField(searchField) {
             entry.style.display = "none";
     }
 
-    searchField.onblur();
+    //fix for listbox hide bug
+    tasks.focus();
+    searchField.focus();
 };
 
 actualCode += function updateEndDate() {
