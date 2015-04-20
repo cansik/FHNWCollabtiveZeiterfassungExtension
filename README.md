@@ -9,7 +9,7 @@ Die Aufgabenliste besitzt nun ein Suchfeld und wird als Liste dargestellt. Somit
 #### Download und Installation
 Die Extension ist nun im Chrome Store verfügbar über folgenden Link:
 
-[FHNW Collabtive Zeiterfassung Extension](https://chrome.google.com/webstore/detail/fhnw-collabtive-zeiterfas/mbpplikcciijpeleapkcogjdbbpckjgh)
+[Chrome Store: FHNW Collabtive Zeiterfassung Extension](https://chrome.google.com/webstore/detail/fhnw-collabtive-zeiterfas/mbpplikcciijpeleapkcogjdbbpckjgh)
 
 #### Letzte Version (Installation funktioniert nur im Chrome Developer Mode)
 - [Alpha 0.4 - 20.04.2015](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/bin/FHNWCollabtiveZeiterfassungExtension_v0.4.crx?raw=true)
