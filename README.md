@@ -1,4 +1,4 @@
-# FHNWCollabtiveZeiterfassungExtension
+# FHNW Collabtive Zeiterfassung Extension
 Die Chrome Extension macht die Zeiterfassung mit dem Collabtive Tool der FHNW etwas einfacher:
 Man hat nun die Möglichkeit eine Zeitspanne anzugeben, wobei die Start und Endzeit automatisch gesetzt werden.
 
