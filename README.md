@@ -1,5 +1,10 @@
 # FHNWCollabtiveZeiterfassungExtension
-Die Chrome Extension macht die Zeiterfassung mit dem Collabtive Tool der FHNW etwas einfacher.
+Die Chrome Extension macht die Zeiterfassung mit dem Collabtive Tool der FHNW etwas einfacher:
+Man hat nun die Möglichkeit eine Zeitspanne anzugeben, wobei die Start und Endzeit automatisch gesetzt werden.
+
+Wenn man das Startdatum setzt, wird auch automatisch das Enddatum auf das Startdatum gesetzt. Meistens arbeitet man ja nicht eine Woche an einer Aufgabe.
+
+Die Aufgabenliste besitzt nun ein Suchfeld und wird als Liste dargestellt. Somit kann man nun nach einer bestimmten Aufgabe suchen.
 
 #### Letzte Version (Installation funktioniert nur im Chrome Developer Mode)
 - [Alpha 0.4 - 20.04.2015](https://github.com/cansik/FHNWCollabtiveZeiterfassungExtension/blob/master/bin/FHNWCollabtiveZeiterfassungExtension_v0.4.crx?raw=true)
